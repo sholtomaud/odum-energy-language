@@ -1,0 +1,63 @@
+{
+  "name": "odum-energy-language",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "./src/main.ts",
+  "files": [
+    "bin",
+    "src",
+    ".github",
+    ".gitignore",
+    ".prettierrc.cjs",
+    "404.html",
+    "AGENTS.md",
+    "eslint.config.js",
+    "index.html",
+    "package.json",
+    "tsconfig.json",
+    "tsconfig.node.json",
+    "vite-plugin-component-manifest.ts",
+    "vite.config.ts",
+    "vitest.config.ts"
+  ],
+  "homepage": "https://sholtomaud.github.io/boba/",
+  "scripts": {
+    "dev": "NODE_ENV=development vite",
+    "dev:host": "vite --host",
+    "build": "NODE_ENV=production vite build",
+    "preview": "vite preview",
+    "test": "vitest run src/ test/",
+    "test:cli": "vitest run test/",
+    "test:ui": "vitest --ui",
+    "test:coverage": "vitest run --coverage",
+    "test:ci": "vitest run src/ test/",
+    "type-check": "tsc --noEmit",
+    "lint": "eslint . --ext .ts,.js",
+    "format": "prettier --write ."
+  },
+  "keywords": [
+    "web-components",
+    "typescript",
+    "vite",
+    "template"
+  ],
+  "author": "",
+  "license": "ISC",
+  "description": "A CLI to create a new Boba app.",
+  "devDependencies": {
+    "@eslint/js": "^9.30.0",
+    "@types/node": "^22.10.10",
+    "@typescript-eslint/eslint-plugin": "^8.35.0",
+    "@typescript-eslint/parser": "^8.35.0",
+    "eslint": "^9.30.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-prettier": "^5.5.1",
+    "globals": "^16.2.0",
+    "happy-dom": "^16.7.3",
+    "prettier": "^3.6.2",
+    "typescript": "^5.7.3",
+    "vite": "^6.3.4",
+    "vitest": "^3.0.5"
+  },
+  "dependencies": {}
+}
