@@ -1,20 +1,27 @@
-import { BaseComponent } from '../../core/base-component';
-import html from './home.html?raw';
-import css from './home.css?raw';
+import html from './home.html?raw'; // Use ?raw instead of ?inline
+import css from './home.css?raw'; // Use ?raw instead of ?inline
 
-// Import the components used by this page to ensure they are bundled.
-import '../diagram-canvas/diagram-canvas';
-import '../symbol-library/symbol-library';
+import { BaseComponent } from '../../core/base-component';
 
 export class HomeComponent extends BaseComponent {
-  static readonly tagName = 'home-page';
+  static readonly tagName = 'home-page'; // Match the element name
 
   constructor() {
     super(html, css);
   }
 
   protected init(): void {
-    console.log('Home page component initialized.');
+    this.setupEventListeners();
+  }
+
+  private setupEventListeners(): void {
+    // Setup component-specific event listeners
+    this.onclick = () => {
+      const currentDateTime = new Date().toLocaleString();
+      console.log('hello world' + currentDateTime);
+      // this.shadowRoot!.querySelector('.title')!.textContent = 'W';
+      // this.shadowRoot!.querySelector('.message')!.textContent = 'Welcome!' + currentDateTime;
+    };
   }
 }
 

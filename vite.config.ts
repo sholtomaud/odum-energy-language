@@ -1,9 +1,10 @@
 import { defineConfig } from 'vite';
 import { resolve } from 'path';
+import componentManifest from './vite-plugin-component-manifest';
 
 export default defineConfig(({ command }) => ({
-  base: command === 'build' ? '/odum-energy-language/' : '/',
-  plugins: [],
+  base: command === 'build' ? '/boba/' : '/',
+  plugins: [componentManifest()],
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
