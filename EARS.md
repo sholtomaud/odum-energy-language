@@ -6,6 +6,8 @@ This document outlines the requirements for the Odum Energy Systems Language Dia
 
 *   **U-1:** The system shall provide a canvas for creating Odum Energy Systems diagrams.
 *   **U-2:** The system shall provide a library of standard Odum Energy Systems symbols in SVG format.
+*   **U-3:** The system shall require Node.js version 23 for its development and build environment.
+
 
 ## Event-Driven Requirements
 

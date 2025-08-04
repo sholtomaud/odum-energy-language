@@ -16,15 +16,15 @@ This project is built with TypeScript and Vite. To get started with development,
 
 ### Prerequisites
 
-*   Node.js (v18 or higher recommended)
+*   Node.js (v23 required)
 *   npm (or a compatible package manager like pnpm or yarn)
 
 ### Installation
 
 1.  Clone the repository:
     ```bash
-    git clone https://github.com/sholtomaud/boba.git
-    cd boba
+    git clone https://github.com/sholtomaud/odum-energy-language.git
+    cd odum-energy-language
     ```
 
 2.  Install the dependencies:
