@@ -38,9 +38,6 @@ jobs:
       - name: Build project
         run: npm run build
 
-      - name: Prepare 404 page for SPA
-        run: cp dist/index.html dist/404.html
-
       - name: Add .nojekyll
         run: touch dist/.nojekyll
 
