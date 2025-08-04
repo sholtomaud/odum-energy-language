@@ -15,6 +15,7 @@ This is a template repository for building modern web applications using Web Com
 *   **CSS Variables:** For themeable and maintainable styles.
 *   **ESLint & Prettier:** For code linting and formatting (configurations are in `eslint.config.js` and `.prettierrc.cjs`).
 
+
 ### 2.1. Technology Constraints
 
 **This project MUST be built using only native browser technologies. Adherence to this constraint is mandatory.**
@@ -33,6 +34,7 @@ This is a template repository for building modern web applications using Web Com
     *   **No 3rd-party drawing/canvas libraries.** All diagramming functionality must be implemented directly using SVG and native browser APIs.
 
 The purpose of this project is to explore the capabilities of the modern web platform without abstractions. Any additions to the dependency list in `package.json` must be for development purposes only (e.g., linters, bundlers, test runners) and must not be part of the final application bundle.
+
 
 ## 3. Directory Structure
 
