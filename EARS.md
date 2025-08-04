@@ -8,6 +8,7 @@ This document outlines the requirements for the Odum Energy Systems Language Dia
 *   **U-2:** The system shall provide a library of standard Odum Energy Systems symbols in SVG format.
 *   **U-3:** The system shall require Node.js version 23 for its development and build environment.
 
+
 ## Event-Driven Requirements
 
 *   **E-1:** When a user drags a symbol from the library onto the canvas, the system shall create a copy of that symbol on the canvas at the drop location.

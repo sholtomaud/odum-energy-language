@@ -6,6 +6,7 @@ Welcome, AI Agent! This file provides guidance for working with the `Odum Energy
 
 This is a template repository for building modern web applications using Web Components with TypeScript and Vite. It features a client-side router and is set up for easy deployment to GitHub Pages. The goal is to create a diagramming tool for the Odum Energy Systems Language.
 
+
 ## 2. Key Technologies
 
 *   **TypeScript:** For static typing and modern JavaScript features.
@@ -14,6 +15,7 @@ This is a template repository for building modern web applications using Web Com
 *   **Client-Side Routing:** Custom router implemented in `src/core/router/router.ts`.
 *   **CSS Variables:** For themeable and maintainable styles.
 *   **ESLint & Prettier:** For code linting and formatting (configurations are in `eslint.config.js` and `.prettierrc.cjs`).
+
 
 ### 2.1. Technology Constraints
 
@@ -33,6 +35,7 @@ This is a template repository for building modern web applications using Web Com
     *   **No 3rd-party drawing/canvas libraries.** All diagramming functionality must be implemented directly using SVG and native browser APIs.
 
 The purpose of this project is to explore the capabilities of the modern web platform without abstractions. Any additions to the dependency list in `package.json` must be for development purposes only (e.g., linters, bundlers, test runners) and must not be part of the final application bundle.
+
 
 ## 3. Directory Structure
 
