@@ -6,7 +6,6 @@ Welcome, AI Agent! This file provides guidance for working with the `Odum Energy
 
 This is a template repository for building modern web applications using Web Components with TypeScript and Vite. It features a client-side router and is set up for easy deployment to GitHub Pages. The goal is to create a diagramming tool for the Odum Energy Systems Language.
 
-
 ## 2. Key Technologies
 
 *   **TypeScript:** For static typing and modern JavaScript features.
