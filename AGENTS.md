@@ -68,6 +68,17 @@ The following commands MUST be run and MUST pass before pushing any commit to Gi
 The build is done during deployment:
 *   **Build for Production:** `npm run build` (output goes to `dist/`)
 
+### End-to-End Testing
+
+In addition to the Vitest unit tests, this project uses Playwright for end-to-end (E2E) testing. E2E tests simulate real user interactions in a browser, ensuring that the application as a whole works as expected.
+
+*   **Running E2E Tests:** To run the Playwright test suite, use the following command:
+    ```bash
+    npm run test:e2e
+    ```
+*   **When to Run:** While not part of the mandatory pre-commit checks (to keep the local development loop fast), it is highly recommended to run the E2E tests before submitting a pull request to catch any potential integration issues.
+*   **CI/CD:** The E2E tests are automatically run in the CI pipeline for all pull requests to `main`.
+
 ### Git Workflow & Project Management
 
 #### 🚨 MANDATORY GIT WORKFLOW 🚨
