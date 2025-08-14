@@ -45,7 +45,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: dist/
-          # Remove CNAME unless you're using a custom domain
+          # Remove CNAME unless you're using a custom domain 
 
   deploy:
     environment:
