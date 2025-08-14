@@ -203,16 +203,16 @@ git rebase main
 
 ## 5. Deployment (GitHub Pages)
 
-This project is configured for deployment to GitHub Pages under a repository-named subdirectory (e.g., `https://<username>.github.io/boba/`).
+This project is configured for deployment to GitHub Pages under a repository-named subdirectory (e.g., `https://<username>.github.io/odum-energy-language/`).
 
-*   **Base Path:** The `vite.config.ts` file sets `base: '/boba/'` during production builds (`command === 'build'`). This ensures that `import.meta.env.BASE_URL` is correctly set to `/boba/`, and all asset paths in the built `index.html` are prefixed accordingly.
+*   **Base Path:** The `vite.config.ts` file sets `base: '/odum-energy-language/'` during production builds (`command === 'build'`). This ensures that `import.meta.env.BASE_URL` is correctly set to `/odum-energy-language/`, and all asset paths in the built `index.html` are prefixed accordingly.
 *   **SPA Routing (404.html Strategy):** To support deep linking in the SPA on GitHub Pages, the `.github/workflows/deploy.yml` workflow includes a step: `cp dist/index.html dist/404.html`. This means GitHub Pages will serve the application's main `index.html` file for any path it doesn't directly recognize, allowing the client-side router to handle the specific route.
 
 ## 6. Routing
 
 *   Client-side routing is handled by the `Router` class in `src/core/router/router.ts`.
 *   Routes are defined and registered in `src/main.ts` using `Router.getInstance().registerRoute({...});`.
-*   The router uses `import.meta.env.BASE_URL` (provided by Vite, see "Deployment" section) to correctly determine the application-specific path from `window.location.pathname`. For example, if `BASE_URL` is `/boba/` and `window.location.pathname` is `/boba/about`, the router will correctly identify the application path as `/about`.
+*   The router uses `import.meta.env.BASE_URL` (provided by Vite, see "Deployment" section) to correctly determine the application-specific path from `window.location.pathname`. For example, if `BASE_URL` is `/odum-energy-language/` and `window.location.pathname` is `/odum-energy-language/about`, the router will correctly identify the application path as `/about`.
 
 ## 7. Component Structure
 
@@ -361,21 +361,20 @@ As an AI agent working with this codebase, embody these principles:
 ## PROPOSED AGENTS.MD UPDATE
 
 ### Reason for Update:
-The project has been rebranded from `ts-wc-templates` to `Boba`. This update reflects the new naming in the agent instructions to avoid confusion.
+The project name and repository name have been consolidated to `odum-energy-language`. The documentation previously contained outdated references to `boba`, which was causing confusion and was inconsistent with `vite.config.ts` and `package.json`.
 
 ### Section(s) to Modify:
-- Section 1: Project Overview
 - Section 5: Deployment (GitHub Pages)
 - Section 6: Routing
 
 ### Proposed Changes:
-Replaced all instances of `ts-wc-templates` with `Boba` or `boba-templater` where appropriate to reflect the new project name.
+Replaced all instances of `boba` with `odum-energy-language` in the examples for deployment paths and routing base URLs. This aligns the documentation with the actual project configuration.
 
 ### Security Impact Assessment (if applicable):
-N/A. This is a documentation and branding change.
+N/A. This is a documentation consistency update.
 
 ### Expected Benefits:
-Instructions are now consistent with the rest of the codebase, reducing confusion for AI agents.
+Instructions are now consistent with the rest of the codebase and the live deployment configuration, reducing confusion for AI agents and developers.
 
 ### Testing/Validation:
-The changes can be validated by confirming that the instructions align with the updated file names and configurations in `package.json` and `vite.config.ts`.
+The changes can be validated by confirming that the instructions in this document now align with the `base` property in `vite.config.ts` and the `homepage` URL in `package.json`.
