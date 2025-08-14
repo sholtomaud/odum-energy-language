@@ -231,7 +231,11 @@ This project is configured for deployment to GitHub Pages under a repository-nam
 *   Use kebab-case for custom element tag names (e.g., `app-root`, `home-page`).
 *   Write meaningful commit messages that describe the change and its purpose.
 
-## 9. SELF-UPDATE PROTOCOL FOR AI AGENTS
+## 9. Gemini Agent Instructions
+
+If you are a Gemini agent, please consult the `gemini.md` file for a detailed workflow on how to add new features to this project. The instructions in `gemini.md` are designed to work in conjunction with the rules outlined in this document.
+
+## 10. SELF-UPDATE PROTOCOL FOR AI AGENTS
 
 ### When to Propose AGENTS.md Updates
 
