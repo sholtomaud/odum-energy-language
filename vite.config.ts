@@ -3,6 +3,15 @@ import { resolve } from 'path';
 import componentManifest from './vite-plugin-component-manifest';
 
 export default defineConfig(({ command }) => ({
+  // Note: The build process is handled entirely by Vite.
+  // The `npm run build` command invokes `vite build`, which automatically
+  // compiles TypeScript to JavaScript, bundles all modules, and places the
+  // output in the `dist/` directory.
+  //
+  // The entry point for the build is `index.html`. Vite analyzes the
+  // `<script>` tags in `index.html` and follows the import chains to
+  // determine which files to include in the bundle. `src/main.ts` is the
+  // main TypeScript entry point and is included in `index.html`.
   base: command === 'build' ? '/odum-energy-language/' : '/',
   plugins: [componentManifest()],
   build: {
