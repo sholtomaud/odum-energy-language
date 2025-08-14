@@ -8,10 +8,14 @@
 
 .canvas {
   border: 1px dashed var(--color-primary);
-  background-color: var(--color-background-soft);
   min-height: 400px;
   flex-grow: 1;
   position: relative; /* Needed for positioning symbols */
+  background-color: #f0fff0; /* Honeydew - a light green */
+  background-image:
+    linear-gradient(to right, #d7e8d7 1px, transparent 1px),
+    linear-gradient(to bottom, #d7e8d7 1px, transparent 1px);
+  background-size: 20px 20px;
 }
 
 h2 {

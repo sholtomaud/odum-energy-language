@@ -1,1 +1,8 @@
 node_modules
+/dist
+/test-results/
+/playwright-report/
+/coverage/
+
+# Ignore JS files in src
+src/**/*.js
