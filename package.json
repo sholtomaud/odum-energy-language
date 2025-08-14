@@ -20,7 +20,7 @@
     "vite.config.ts",
     "vitest.config.ts"
   ],
-  "homepage": "https://sholtomaud.github.io/boba/",
+  "homepage": "https://sholtomaud.github.io/odum-energy-language/",
   "scripts": {
     "dev": "NODE_ENV=development vite",
     "dev:host": "vite --host",
@@ -44,7 +44,7 @@
   ],
   "author": "",
   "license": "ISC",
-  "description": "A CLI to create a new Boba app.",
+  "description": "A diagramming tool for the Odum Energy Systems Language.",
   "devDependencies": {
     "@eslint/js": "^9.30.0",
     "@playwright/test": "^1.54.2",
