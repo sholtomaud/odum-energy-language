@@ -9,7 +9,23 @@ export class SymbolLibrary extends BaseComponent {
   }
 
   protected init(): void {
-    // Component initialization logic can go here
+    this.addDragAndDropListeners();
+  }
+
+  private addDragAndDropListeners(): void {
+    const symbols = this.shadowRoot?.querySelectorAll('.symbol-item');
+    symbols?.forEach((symbol) => {
+      (symbol as HTMLElement).addEventListener(
+        'dragstart',
+        (event: DragEvent) => {
+          const symbolType = (event.target as HTMLElement).dataset.symbolType;
+          if (event.dataTransfer && symbolType) {
+            event.dataTransfer.setData('text/plain', symbolType);
+            event.dataTransfer.effectAllowed = 'copy';
+          }
+        }
+      );
+    });
   }
 }
 
